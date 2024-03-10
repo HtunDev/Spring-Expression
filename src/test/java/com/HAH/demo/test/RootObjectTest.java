@@ -30,6 +30,12 @@ public class RootObjectTest {
 //		var expressName = expression.getValue(student,String.class);
 		System.out.println(expressName);
 
+		if (expression.isWritable(student)) {
+			expression.setValue(student, "Maung Maung");
+		}
+		
+		System.out.println(student.getName());
+
 		expression = parser.parseExpression("age");
 		var expressAge = expression.getValue(student, Integer.class);
 		System.out.println(expressAge);

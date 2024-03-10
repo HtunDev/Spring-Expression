@@ -26,5 +26,17 @@ public class Student {
 	public List<String> getInterest() {
 		return interest;
 	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setInterest(List<String> interest) {
+		this.interest = interest;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
 
 }
